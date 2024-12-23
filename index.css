@@ -7,7 +7,10 @@
 
 .facebook-header {
   background-color: #252728;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-search {
@@ -36,4 +39,57 @@
   padding: 0.5rem 2.3rem;
   font-size: 1rem;
   color: #bcbcbc;
+}
+
+.navbar button {
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #bcbcbc;
+}
+
+.navbar button i {
+  font-size: 1.5rem;
+}
+
+.side-navbar {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.side-navbar button {
+  padding: 0.75rem;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  background-color: #3b3d3e;
+  color: #e2e5e9;
+}
+
+.side-navbar button i {
+  font-size: 1.25rem;
+}
+
+.profile-picture {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.profile-pic-menu {
+  position: absolute;
+  top: 2rem;
+  right: 0.75rem;
+  font-size: 0.5rem;
+  background-color: #3b3d3e;
+  color: #e2e5e9;
+  padding: 0.25rem;
+  border: 1px solid #252728;
+  border-radius: 100%;
+  z-index: 1;
+  cursor: pointer;
 }
