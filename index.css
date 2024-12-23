@@ -42,11 +42,24 @@
 }
 
 .navbar button {
-  padding: 0.5rem 3rem;
+  padding: 1rem 3rem;
   cursor: pointer;
   background-color: transparent;
   border: none;
   color: #bcbcbc;
+}
+
+.navbar button:hover {
+  background-color: #3b3d3e;
+  border-radius: 1rem;
+}
+
+.navbar button:active {
+  color: #0866ff;
+}
+
+.navbar button.active {
+  color: #0866ff;
 }
 
 .navbar button i {
@@ -82,7 +95,7 @@
 
 .profile-pic-menu {
   position: absolute;
-  top: 2rem;
+  top: 2.5rem;
   right: 0.75rem;
   font-size: 0.5rem;
   background-color: #3b3d3e;
