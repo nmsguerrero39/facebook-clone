@@ -7,6 +7,8 @@
 
 body {
   background-color: #1c1c1d;
+  padding-top: 5rem;
+  padding-left: 21rem;
 }
 
 .facebook-header {
@@ -119,6 +121,8 @@ body {
   position: fixed;
   top: 4.5rem;
   left: 0;
+  bottom: 0;
+  overflow: hidden;
   width: 20rem;
   height: auto;
   padding: 1rem 0.5rem;
@@ -160,4 +164,28 @@ body {
   padding: 0.25rem;
   border: none;
   font-size: 1.25rem;
+}
+
+.contacts-sidebar {
+  position: fixed;
+  top: 4.5rem;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 15rem;
+  height: auto;
+  padding-top: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+
+.contacts-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #bcbcbc;
+}
+
+.contacts-heading h2 {
+  font-size: 1rem;
 }
