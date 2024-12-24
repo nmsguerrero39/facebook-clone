@@ -7,8 +7,10 @@
 
 body {
   background-color: #1c1c1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 5rem;
-  padding-left: 21rem;
 }
 
 .facebook-header {
@@ -27,9 +29,10 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
+  cursor: pointer;
 }
 
-.logo-search .fa-solid {
+.logo-search .fa-magnifying-glass {
   position: absolute;
   padding: 1rem 4rem;
   color: #bcbcbc;
@@ -462,4 +465,56 @@ body {
 .profile-react div i {
   font-size: 1.5rem;
   margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 1215px) {
+  .sidebar,
+  .contacts-sidebar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .navbar {
+    display: none;
+  }
+
+  .profile-pic-menu {
+    top: 2rem;
+  }
+
+  .facebook-content {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .facebook-content {
+    padding: 0 1rem 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .search-box {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    text-align: center;
+    border-radius: 100%;
+  }
+
+  .search-box::placeholder {
+    color: transparent;
+  }
+
+  .part-two div span,
+  .profile-react div span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .search-box {
+    margin-right: 0.5rem;
+  }
 }
