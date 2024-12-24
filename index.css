@@ -184,8 +184,122 @@ body {
   justify-content: space-between;
   align-items: center;
   color: #bcbcbc;
+  margin-bottom: 0.5rem;
 }
 
 .contacts-heading h2 {
   font-size: 1rem;
+}
+
+.contacts-icons {
+  cursor: pointer;
+}
+
+.contacts-icons .fa-magnifying-glass {
+  font-size: 1rem;
+  margin-right: 1.25rem;
+}
+
+.contacts-icons .fa-ellipsis {
+  font-size: 1.25rem;
+}
+
+.contacts-name {
+  display: grid;
+  grid-template-columns: 3rem auto;
+  align-items: center;
+  color: #fffafa;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contacts-name img {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 100%;
+}
+
+.contacts-name .online-status {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #39a23f;
+  border-radius: 100%;
+  border: 2px solid #1c1c1d;
+  position: absolute;
+  top: 5.25rem;
+  left: 2.75rem;
+}
+
+.online-status2 {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #39a23f;
+  border-radius: 100%;
+  border: 2px solid #1c1c1d;
+  position: absolute;
+  top: 9rem;
+  left: 2.75rem;
+}
+
+.online-status3 {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #39a23f;
+  border-radius: 100%;
+  border: 2px solid #1c1c1d;
+  position: absolute;
+  top: 12.75rem;
+  left: 2.75rem;
+}
+
+.online-status4 {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #39a23f;
+  border-radius: 100%;
+  border: 2px solid #1c1c1d;
+  position: absolute;
+  top: 16.5rem;
+  left: 2.75rem;
+}
+
+.online-status5 {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #39a23f;
+  border-radius: 100%;
+  border: 2px solid #1c1c1d;
+  position: absolute;
+  top: 20.25rem;
+  left: 2.75rem;
+}
+
+.online-status6 {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #39a23f;
+  border-radius: 100%;
+  border: 2px solid #1c1c1d;
+  position: absolute;
+  top: 24rem;
+  left: 2.75rem;
+}
+
+.online-status7 {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #39a23f;
+  border-radius: 100%;
+  border: 2px solid #1c1c1d;
+  position: absolute;
+  top: 27.75rem;
+  left: 2.75rem;
+}
+
+.contacts-name:hover {
+  background-color: #3b3d3e;
+  border-radius: 10px;
+  cursor: pointer;
 }
