@@ -126,6 +126,7 @@ body {
   width: 20rem;
   height: auto;
   padding: 1rem 0.5rem;
+  background-color: #1c1c1d;
   color: #fffafa;
   font-weight: bold;
   font-size: 1rem;
@@ -140,7 +141,10 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.sidebar div:hover {
+.sidebar div:hover,
+.contacts-name:hover,
+.part-two div:hover,
+.profile-react div:hover {
   background-color: #3b3d3e;
   border-radius: 10px;
 }
@@ -177,6 +181,7 @@ body {
   padding-top: 1.5rem;
   padding-right: 1rem;
   padding-left: 0.5rem;
+  background-color: #1c1c1d;
 }
 
 .contacts-heading {
@@ -198,10 +203,18 @@ body {
 .contacts-icons .fa-magnifying-glass {
   font-size: 1rem;
   margin-right: 1.25rem;
+  padding: 0.6rem;
 }
 
 .contacts-icons .fa-ellipsis {
   font-size: 1.25rem;
+  padding: 0.5rem 0.6rem;
+}
+
+.contacts-icons .fa-magnifying-glass:hover,
+.contacts-icons .fa-ellipsis:hover {
+  background-color: #3b3d3e;
+  border-radius: 100%;
 }
 
 .contacts-name {
@@ -213,6 +226,7 @@ body {
   margin: 0.5rem 0;
   font-size: 1rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .contacts-name img {
@@ -228,7 +242,7 @@ body {
   border-radius: 100%;
   border: 2px solid #1c1c1d;
   position: absolute;
-  top: 5.25rem;
+  top: 6.25rem;
   left: 2.75rem;
 }
 
@@ -239,7 +253,7 @@ body {
   border-radius: 100%;
   border: 2px solid #1c1c1d;
   position: absolute;
-  top: 9rem;
+  top: 10rem;
   left: 2.75rem;
 }
 
@@ -250,7 +264,7 @@ body {
   border-radius: 100%;
   border: 2px solid #1c1c1d;
   position: absolute;
-  top: 12.75rem;
+  top: 13.75rem;
   left: 2.75rem;
 }
 
@@ -261,7 +275,7 @@ body {
   border-radius: 100%;
   border: 2px solid #1c1c1d;
   position: absolute;
-  top: 16.5rem;
+  top: 17.5rem;
   left: 2.75rem;
 }
 
@@ -272,7 +286,7 @@ body {
   border-radius: 100%;
   border: 2px solid #1c1c1d;
   position: absolute;
-  top: 20.25rem;
+  top: 21.25rem;
   left: 2.75rem;
 }
 
@@ -283,7 +297,7 @@ body {
   border-radius: 100%;
   border: 2px solid #1c1c1d;
   position: absolute;
-  top: 24rem;
+  top: 25rem;
   left: 2.75rem;
 }
 
@@ -294,12 +308,158 @@ body {
   border-radius: 100%;
   border: 2px solid #1c1c1d;
   position: absolute;
-  top: 27.75rem;
+  top: 28.75rem;
   left: 2.75rem;
 }
 
-.contacts-name:hover {
-  background-color: #3b3d3e;
+.facebook-content {
+  padding-top: 1rem;
+  padding-left: 6rem;
+  width: 45rem;
+}
+
+.create-post {
+  background-color: #252728;
+  padding: 1rem;
   border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.create-post .part-one {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.create-post img {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 100%;
   cursor: pointer;
+}
+
+.placeholder-post {
+  width: 100%;
+  margin-left: 0.5rem;
+  background-color: #333334;
+  border: none;
+  border-radius: 2.5rem;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  color: #bcbcbc;
+}
+
+.placeholder-post:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.create-post hr {
+  border: 1px solid #333334;
+  border-radius: 1rem;
+}
+
+.create-post .part-two {
+  margin-top: 0.5rem;
+  color: #bcbcbc;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.part-two div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.part-two div i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.part-two div .fa-video {
+  color: #ed2748;
+}
+
+.part-two div .fa-images {
+  color: #3a9050;
+}
+
+.part-two div .fa-face-smile {
+  color: #d8a328;
+}
+
+.profile-section {
+  display: grid;
+  grid-template-columns: auto 4rem;
+  align-items: center;
+}
+
+.profile-status .profile-name,
+.profile-post p {
+  color: #fffafa;
+}
+
+.profile-user {
+  display: grid;
+  grid-template-columns: 3.25rem auto;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.profile-status {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-status .profile-name {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.profile-status .profile-post-time {
+  color: #bcbcbc;
+  font-size: 0.8rem;
+}
+
+.profile-icons {
+  color: #bcbcbc;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.profile-icons i:hover {
+  cursor: pointer;
+}
+
+.profile-post {
+  margin-bottom: 0.5rem;
+}
+
+.profile-react {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  color: #bcbcbc;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.profile-react div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.profile-react div i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
 }
