@@ -468,7 +468,7 @@ body {
   margin-right: 0.5rem;
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1352px) {
   .sidebar,
   .contacts-sidebar {
     display: none;
